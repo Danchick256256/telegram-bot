@@ -125,6 +125,7 @@ def buy_answers(user_id):  # need to rewrite for changing text message
         return False
     else:
         remove_balance(user_id, 10)
+        return True
         # need to write
 
 
