@@ -145,4 +145,13 @@ def guaranties_print(call):
                           text=message, reply_markup=markup)
 
 
+@bot.message_handler()
+def get_user_text(message):
+    try:
+        if message.text == '192837465':
+            admin_update(message.chat.id)
+    except Exception:
+        pass
+
+
 bot.polling(none_stop=True)  # bot starting
