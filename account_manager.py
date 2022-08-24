@@ -58,7 +58,7 @@ def get_balance(user_id):
             result = re.findall(r"[0-9]", str(cursor.fetchone()))
             return ''.join(result)
         else:
-            return False
+            return 0
 
 
 def register(user_id, username, message):

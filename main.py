@@ -30,7 +30,8 @@ def start(message):
     if is_subscribed(group_id, message.from_user.id, bot, status):  # checking if user subscribed
         main_menu(message)  # printing main menu
     else:
-        bot.send_message(message.chat.id, 'Для начала подпишитесь на наш телеграм канал t.me/vipege2023',
+        bot.send_message(message.chat.id, 'Для начала подпишитесь на наш телеграм канал t.me/vipege2023,'
+                                          'после напишите команду /start',
                          parse_mode='html')  # need to subscribe message
 
 
